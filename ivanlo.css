@@ -9,299 +9,372 @@
     border: 2px solid red;
 }
 
+/* @media only screen and (min-width: 425px) {
+    body {
+        overflow-x: hidden;
+    }
 
+    .logo a, .navbar a {
+        display: none;
+    }
 
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    justify-content: space-between;
-    padding-right: 15px;
-    padding-left: 15px;
-}
+    #bp_video {
+        top: 0;
+    }
 
-.navdiv{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .bp_title h1 {
+        font-size: 3em;
+    }
 
-.logo a{
-    font-size: 35px;
-    font-weight: 600;
-    display: inline-block;
-}
+    .content-group {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
 
-.navbar ul{
-    list-style-type: none;
-    display: inline-block;
-    background-color: transparent;
-    padding:0;
-    margin:0;
-    overflow: hidden;
-}
+    .content-title1 {
+        display: block;
+        text-align: center;
+    }
 
-.navbar a{
-    color:#ffffff;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    margin-right:25px;
-    transition: 0.3s;
-}
+    .content-and-pic {
+        flex-direction: column; 
+        margin: 2%;
+    }
 
-.navbar li{
-    float: left;
-}
+    .group-pic {
+        order: -1;
+        width: 70%;
+        margin: 0 auto 20px; 
+    }
 
-.video_container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    transform-origin: center;
-    animation: header-fade-out linear forwards;
-    animation-timeline: view();
-    animation-range: exit;
-}
+    .content-group p {
+        font-size: 14px;
+        margin: 5%;
+        word-wrap: break-word;
+    }
 
-#bp_video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 25px;
-    object-fit: cover;
-}
+    table {
+        margin: 2%;
+        font-size: 14px;
+    }
 
-.bp_title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-}
+    th, td {
+        padding: 7px;
+    }
 
-.bp_title h1{
-    margin: 0;
-    line-height: 1;
-    font-size: 10em;
-    color: transparent;
-    text-transform: uppercase;
-    background-image: linear-gradient(to left, #000000, #ffffff, #ffa6fc, #ff94e0, #ff76d8, #ff59c7, #ffffff, #000000);
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: gradient 15s linear infinite;
-    -webkit-background-size: 500%;
-    background-size: 500%;
-    text-align: center;
-}
+    .Jisoo, .Jennie, .Rose, .Lisa {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
 
-.content-group{
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 7%;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 20%;
-}
+    .member-pic {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px; 
+    }
 
-.content-group p{
-    font-size: 16px;
-    margin-left: 8%;
-    margin-right: 2%;
-    text-align: left;
-}
+    .member-content {
+        margin: 2%;
+        font-size: 14px;
+    }
+}  */
 
-.content-and-pic{
-    display: flex;
-    margin-top: 20px;
-}
+@media screen and (min-width: 1024px) {
+    .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        justify-content: space-between;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 
-.group-pic{
-    width: 40%;
-    height: 90%;
-    margin-right: 8%;
-    border-radius: 10px;
-}
+    .navdiv{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.container-divider{
-    text-align: center;
-}
+    .logo a{
+        font-size: 35px;
+        font-weight: 600;
+        display: inline-block;
+    }
 
-.inline-block-container{
-    margin-top: 8%;
-    display: inline-block;
-    place-content: center;
-}
+    .navbar ul{
+        list-style-type: none;
+        display: inline-block;
+        background-color: transparent;
+        padding:0;
+        margin:0;
+        overflow: hidden;
+    }
 
-.member-divider {
-    text-align: center;
-    border-right: 5px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-        typing 2s,
-        cursor .4s step-end infinite alternate;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-} 
+    .navbar a{
+        color:#ffffff;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        margin-right:25px;
+        transition: 0.3s;
+    }
 
-.member-divider{
-    margin-top: 8%;
-    color: #ffffff;
-    text-align: center;
-    font-size: 25px;
-}
+    .navbar li{
+        float: left;
+    }
 
-.h1-member-names{
-    font-size: 70px;
-}
+    .video_container{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        transform-origin: center;
+        animation: header-fade-out linear forwards;
+        animation-timeline: view();
+        animation-range: exit;
+    }
 
-.div-member-general-layout{
-    display: flex;
-    margin-top: 8%;
-    margin-left: 8%;
-    margin-right: 8%;
-}
+    #bp_video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 25px;
+        object-fit: cover;
+    }
 
-table{
-    text-align: left;
-    margin-bottom: 2%;
-    font-size: 18px;
-    width: 100%;
-    border-collapse: collapse;
-}
+    .bp_title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
 
-th, tr{
-    width: 10vw;
-}
+    .bp_title h1{
+        margin: 0;
+        line-height: 1;
+        font-size: 10em;
+        color: transparent;
+        text-transform: uppercase;
+        background-image: linear-gradient(to left, #000000, #ffffff, #ffa6fc, #ff94e0, #ff76d8, #ff59c7, #ffffff, #000000);
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: gradient 15s linear infinite;
+        -webkit-background-size: 500%;
+        background-size: 500%;
+        text-align: center;
+    }
 
-th{
-    font-weight: 600;
-    border-right: 1px #ff76d8 solid;
-}
+    .content-group{
+        color: #ffffff;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 7%;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 20%;
+    }
 
-td{
-    padding-left: 6%;
-    white-space: normal;
-}
+    .content-group p{
+        font-size: 16px;
+        margin-left: 8%;
+        margin-right: 2%;
+        text-align: left;
+    }
 
-.div-member-content-layout{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #ffffff;
-    gap: 25px;
-}
+    .content-and-pic{
+        display: flex;
+        margin-top: 20px;
+    }
 
-.Jisoo-content{
-    margin-left: 3%;
-    animation: fade-in linear;
-    transform-origin: right;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-}
+    .group-pic{
+        width: 40%;
+        height: 90%;
+        margin-right: 8%;
+        border-radius: 10px;
+    }
 
-.Jisoo-pic{
-    background-image: url('Members/Jisoo_Portrait_BW.png'); 
-    width: 30%;
-    opacity: 0.8;
-    border-radius: 20%;
-    transform: scale(1);
-    animation: fade-in linear;
-    transform-origin: left;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
-}
+    .container-divider{
+        text-align: center;
+    }
 
-.Jennie-content{
-    margin-right: 3%;
-    animation: fade-in linear;
-    transform-origin: left;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-}
+    .inline-block-container{
+        margin-top: 8%;
+        display: inline-block;
+        place-content: center;
+    }
 
-.Jennie-pic{
-    background-image: url('Members/Jennie_Portrait_BW.png');
-    width: 30%;
-    height: 30%;
-    opacity: 0.8;
-    border-radius: 20%;
-    transform: scale(1);
-    animation: fade-in linear;
-    transform-origin: right;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
-}
+    .member-divider {
+        text-align: center;
+        border-right: 5px solid;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: 
+            typing 2s,
+            cursor .4s step-end infinite alternate;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+    } 
 
-.Rose-content{
-    margin-left: 3%;
-    animation: fade-in linear;
-    transform-origin: right;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-}
+    .member-divider{
+        margin-top: 8%;
+        color: #ffffff;
+        text-align: center;
+        font-size: 25px;
+    }
 
-.Rose-pic{
-    background-image: url('Members/Rose_Portrait_BW.png');
-    width: 30%;
-    border-radius: 20%;
-    opacity: 0.8;
-    transform: scale(1);
-    animation: fade-in linear;
-    transform-origin: left;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
-}
+    .h1-member-names{
+        font-size: 70px;
+    }
 
-.Lisa-content{
-    margin-right: 3%;
-    animation: fade-in linear;
-    transform-origin: left;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-}
+    .div-member-general-layout{
+        display: flex;
+        margin-top: 8%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
-.Lisa-pic{
-    background-image: url('Members/Lisa_Portrait_BW.png');
-    width: 30%;
-    height: 40%;
-    opacity: 0.8;
-    border-radius: 20%;
-    transform: scale(1);
-    animation: fade-in linear;
-    transform-origin: right;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 40%;
-    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
-}
+    table{
+        text-align: left;
+        margin-bottom: 2%;
+        font-size: 18px;
+        width: 100%;
+        border-collapse: collapse;
+    }
 
-.footer-content{
-    color: #000000;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 8%;
-    margin-bottom: 1%;
-    font-weight: normal;
-    background-color: #ff94e0;
-    margin-bottom: auto;
+    th, tr{
+        width: 10vw;
+    }
+
+    th{
+        font-weight: 600;
+        border-right: 1px #ff76d8 solid;
+    }
+
+    td{
+        padding-left: 6%;
+        white-space: normal;
+    }
+
+    .div-member-content-layout{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #ffffff;
+        gap: 25px;
+    }
+
+    .Jisoo-content{
+        margin-left: 3%;
+        animation: fade-in linear;
+        transform-origin: right;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+    }
+
+    .Jisoo-pic{
+        background-image: url('Members/Jisoo_Portrait_BW.png'); 
+        width: 30%;
+        opacity: 0.8;
+        border-radius: 20%;
+        transform: scale(1);
+        animation: fade-in linear;
+        transform-origin: left;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+        transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
+    }
+
+    .Jennie-content{
+        margin-right: 3%;
+        animation: fade-in linear;
+        transform-origin: left;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+    }
+
+    .Jennie-pic{
+        background-image: url('Members/Jennie_Portrait_BW.png');
+        width: 30%;
+        height: 30%;
+        opacity: 0.8;
+        border-radius: 20%;
+        transform: scale(1);
+        animation: fade-in linear;
+        transform-origin: right;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+        transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
+    }
+
+    .Rose-content{
+        margin-left: 3%;
+        animation: fade-in linear;
+        transform-origin: right;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+    }
+
+    .Rose-pic{
+        background-image: url('Members/Rose_Portrait_BW.png');
+        width: 30%;
+        border-radius: 20%;
+        opacity: 0.8;
+        transform: scale(1);
+        animation: fade-in linear;
+        transform-origin: left;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+        transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
+    }
+
+    .Lisa-content{
+        margin-right: 3%;
+        animation: fade-in linear;
+        transform-origin: left;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+    }
+
+    .Lisa-pic{
+        background-image: url('Members/Lisa_Portrait_BW.png');
+        width: 30%;
+        height: 40%;
+        opacity: 0.8;
+        border-radius: 20%;
+        transform: scale(1);
+        animation: fade-in linear;
+        transform-origin: right;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 40%;
+        transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
+    }
+
+    .footer-content{
+        color: #000000;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 8%;
+        margin-bottom: 1%;
+        font-weight: normal;
+        background-color: #ff94e0;
+        margin-bottom: auto;
+    }
 }
 
 /* HOVER */
@@ -553,77 +626,4 @@ td{
         font-size: 14px;
     }
 
-}
-
-@media screen and (min-width: 425px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .logo a, .navbar a {
-        display: none;
-    }
-
-    #bp_video {
-        top: 0;
-    }
-
-    .bp_title h1 {
-        font-size: 3em;
-    }
-
-    .content-group {
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .content-title1 {
-        display: block;
-        text-align: center;
-    }
-
-    .content-and-pic {
-        flex-direction: column; 
-        margin: 2%;
-    }
-
-    .group-pic {
-        order: -1;
-        width: 70%;
-        margin: 0 auto 20px; 
-    }
-
-    .content-group p {
-        font-size: 14px;
-        margin: 5%;
-        word-wrap: break-word;
-    }
-
-    table {
-        margin: 2%;
-        font-size: 14px;
-    }
-
-    th, td {
-        padding: 7px;
-    }
-
-    .Jisoo, .Jennie, .Rose, .Lisa {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .member-pic {
-        width: 90%;
-        height: auto;
-        margin: 0 auto 20px; 
-    }
-
-    .member-content {
-        margin: 2%;
-        font-size: 14px;
-    }
-} 
+} */
