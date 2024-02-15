@@ -82,7 +82,7 @@
     }
 }  */
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) { */
     .navbar{
         position: fixed;
         width: 100%;
@@ -283,15 +283,6 @@
     .Jisoo-pic{
         background-image: url('Members/Jisoo_Portrait_BW.png'); 
         width: 30%;
-        opacity: 0.8;
-        border-radius: 20%;
-        transform: scale(1);
-        animation: fade-in linear;
-        transform-origin: left;
-        animation-timeline: view();
-        animation-range-start: cover;
-        animation-range-end: 40%;
-        transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
     }
 
     .Jennie-content{
@@ -307,15 +298,6 @@
         background-image: url('Members/Jennie_Portrait_BW.png');
         width: 30%;
         height: 30%;
-        opacity: 0.8;
-        border-radius: 20%;
-        transform: scale(1);
-        animation: fade-in linear;
-        transform-origin: right;
-        animation-timeline: view();
-        animation-range-start: cover;
-        animation-range-end: 40%;
-        transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
     }
 
     .Rose-content{
@@ -330,15 +312,6 @@
     .Rose-pic{
         background-image: url('Members/Rose_Portrait_BW.png');
         width: 30%;
-        border-radius: 20%;
-        opacity: 0.8;
-        transform: scale(1);
-        animation: fade-in linear;
-        transform-origin: left;
-        animation-timeline: view();
-        animation-range-start: cover;
-        animation-range-end: 40%;
-        transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
     }
 
     .Lisa-content{
@@ -354,10 +327,13 @@
         background-image: url('Members/Lisa_Portrait_BW.png');
         width: 30%;
         height: 40%;
-        opacity: 0.8;
+    }
+
+    .Jisoo-pic, .Jennie-pic, .Rose-pic, .Lisa-pic{
+        opacity: 0.6;
         border-radius: 20%;
         transform: scale(1);
-        animation: fade-in linear;
+        animation: fade-in-pictures linear;
         transform-origin: right;
         animation-timeline: view();
         animation-range-start: cover;
@@ -375,7 +351,7 @@
         background-color: #ff94e0;
         margin-bottom: auto;
     }
-}
+/* } */
 
  @import url(effects.css);
 
