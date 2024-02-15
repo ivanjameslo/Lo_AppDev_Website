@@ -9,6 +9,8 @@
     border: 2px solid red;
 }
 
+
+
 .navbar{
     position: fixed;
     width: 100%;
@@ -47,12 +49,6 @@
     text-align: center;
     margin-right:25px;
     transition: 0.3s;
-}
-
-.navbar a:hover{
-    background-color: #ff59c7;
-    color: #000000;
-    font-weight: bold;
 }
 
 .navbar li{
@@ -155,16 +151,6 @@
     animation-range-end: 40%;
 } 
 
-@keyframes cursor{
-    50% {
-        border-color: transparent;
-    }
-}
-
-@keyframes typing{
-    from { width: 0; }
-}
-
 .member-divider{
     margin-top: 8%;
     color: #ffffff;
@@ -236,15 +222,6 @@ td{
     transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.Jisoo-pic:hover {
-    width: 30%;
-    border-radius: 3%;
-    opacity: 1;
-    transform: scale(1);
-    content: url('Members/Jisoo_Portrait.png');
-    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
-}
-
 .Jennie-content{
     margin-right: 3%;
     animation: fade-in linear;
@@ -269,16 +246,6 @@ td{
     transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.Jennie-pic:hover {
-    width: 30%;
-    height: 30%;
-    border-radius: 3%;
-    opacity: 1;
-    transform: scale(1);
-    content: url('Members/Jennie_Portrait.png');
-    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
-}
-
 .Rose-content{
     margin-left: 3%;
     animation: fade-in linear;
@@ -299,15 +266,6 @@ td{
     animation-timeline: view();
     animation-range-start: cover;
     animation-range-end: 40%;
-    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
-}
-
-.Rose-pic:hover {
-    width: 30%;
-    border-radius: 3%;
-    opacity: 1;
-    transform: scale(1);
-    content: url('Members/Rose_Portrait.png');
     transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
 }
 
@@ -335,16 +293,6 @@ td{
     transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.Lisa-pic:hover {
-    width: 30%;
-    height: 40%;
-    border-radius: 3%;
-    opacity: 1;
-    transform: scale(1);
-    content: url('Members/Lisa_Portrait.png');
-    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
-}
-
 .footer-content{
     color: #000000;
     text-align: center;
@@ -356,7 +304,63 @@ td{
     margin-bottom: auto;
 }
 
+/* HOVER */
+
+.navbar a:hover{
+    background-color: #ff59c7;
+    color: #000000;
+    font-weight: bold;
+}
+
+.Jisoo-pic:hover {
+    width: 30%;
+    border-radius: 3%;
+    opacity: 1;
+    transform: scale(1);
+    content: url('Members/Jisoo_Portrait.png');
+    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.Jennie-pic:hover {
+    width: 30%;
+    height: 30%;
+    border-radius: 3%;
+    opacity: 1;
+    transform: scale(1);
+    content: url('Members/Jennie_Portrait.png');
+    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.Rose-pic:hover {
+    width: 30%;
+    border-radius: 3%;
+    opacity: 1;
+    transform: scale(1);
+    content: url('Members/Rose_Portrait.png');
+    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.Lisa-pic:hover {
+    width: 30%;
+    height: 40%;
+    border-radius: 3%;
+    opacity: 1;
+    transform: scale(1);
+    content: url('Members/Lisa_Portrait.png');
+    transition: width 1s ease-in-out, border-radius 1s ease-in-out, opacity 1s ease-in-out;
+}
+
 /* ANIMATIONS */
+
+@keyframes cursor{
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from { width: 0; }
+}
 
 @keyframes gradient{
     0%{
@@ -387,3 +391,239 @@ td{
         scale: 2;
     }
 }
+
+
+/* @media screen and (max-width: 768px) {
+    .logo a{
+        display: none;
+    }
+    .navbar a{
+        display: none;
+    }
+    #bp_video{
+        top: 0;
+    }
+    .bp_title h1{
+        font-size: 3em;
+    }
+    .content-group{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-title1{
+        display: flex;
+    }
+
+    .content-group p{
+        font-size: 14px;
+    }
+    .group-pic{
+        width: 70%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .logo a{
+        display: none;
+    }
+    .navbar a{
+        display: none;
+    }
+    #bp_video{
+        top: 0;
+    }
+    .bp_title h1{
+        font-size: 3em;
+    }
+
+    .content-group{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-title1{
+        display: block;
+        text-align: center;  
+    }
+    .content-and-pic {
+        flex-direction: column; 
+        margin:2%;
+    }
+    .group-pic {
+        order: -1;
+        width: 70%;
+        margin: 0 auto 20px; 
+    }
+    .content-group p{
+        font-size: 14px;
+        margin: 5%;
+        word-wrap: break-word;
+        
+    }
+
+    table{
+        margin: 2%;
+        font-size: 14px;
+    }
+
+    th, td{
+        padding: 7px;
+    }
+
+    .Jisoo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Jisoo-pic{
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px; 
+    }
+    .Jisoo-content{
+        margin: 2%;
+        font-size: 14px;
+    }
+    
+} */
+
+/* ----------------------------------------------------------- */
+
+/* @media screen and (max-width: 768px) {
+    .logo a, .navbar a {
+        display: none;
+    }
+
+    #bp_video {
+        top: 0;
+    }
+
+    .bp_title h1 {
+        font-size: 3em;
+    }
+
+    .content-group {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .content-group p {
+        font-size: 14px;
+        margin: 5%;
+        word-wrap: break-word;
+    }
+
+    .group-pic {
+        width: 70%;
+        margin: 0 auto 20px; 
+    }
+
+    table {
+        margin: 2%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+
+    .Jisoo, .Jennie, .Rose, .Lisa {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .member-pic {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px; 
+    }
+
+    .member-content {
+        margin: 2%;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .logo a, .navbar a {
+        display: none;
+    }
+
+    #bp_video {
+        top: 0;
+    }
+
+    .bp_title h1 {
+        font-size: 3em;
+    }
+
+    .content-group {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .content-title1 {
+        display: block;
+        text-align: center;
+    }
+
+    .content-and-pic {
+        flex-direction: column; 
+        margin: 2%;
+    }
+
+    .group-pic {
+        order: -1;
+        width: 70%;
+        margin: 0 auto 20px; 
+    }
+
+    .content-group p {
+        font-size: 14px;
+        margin: 5%;
+        word-wrap: break-word;
+    }
+
+    table {
+        margin: 2%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+
+    .Jisoo, .Jennie, .Rose, .Lisa {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .member-pic {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px; 
+    }
+
+    .member-content {
+        margin: 2%;
+        font-size: 14px;
+    }
+} 
