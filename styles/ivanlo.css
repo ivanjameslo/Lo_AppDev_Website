@@ -15,11 +15,10 @@
     body{
         overflow-x: hidden;
     }
-    
+
     .navbar{
         display: none;
     }
-
 
     .video_container{
         position: relative;
