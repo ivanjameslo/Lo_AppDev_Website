@@ -639,7 +639,7 @@
     }
 } 
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .navbar{
         position: fixed;
         width: 100%;
@@ -977,7 +977,7 @@
     }
 }
 
-@media screen and (min-width: 1279px) and (max-width: 1919px){
+@media only screen and (min-width: 1279px) and (max-width: 1919px){
     .navbar{
         position: fixed;
         width: 100%;
