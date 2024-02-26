@@ -271,7 +271,7 @@
 
     .slide > img{
         display: block;
-        width: 35%;
+        width: 55%;
         object-fit: cover;
         object-position: center;
 
@@ -599,7 +599,7 @@
 
     .slide > img{
         display: block;
-        width: 35%;
+        width: 55%;
         object-fit: cover;
         object-position: center;
 
