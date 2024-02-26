@@ -313,6 +313,10 @@
     .carousel-button.next{
         right: 1rem;
     }
+
+    .carousel p{
+        display: none;
+    }
 } 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -636,6 +640,10 @@
 
     .carousel-button.next{
         right: 1rem;
+    }
+    
+    .carousel p{
+        display: none;
     }
 } 
 
@@ -974,6 +982,12 @@
 
     .carousel-button.next{
         right: 1rem;
+    }
+
+    .carousel p{
+        color: white;
+        font-size: 1.5rem;
+        margin-left: 4%;
     }
 }
 
